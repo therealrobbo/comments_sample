@@ -1,0 +1,69 @@
+#comment_block {
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+form.comment_form {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+#comment_list {
+    margin: 10px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.comment_item {
+    margin-bottom: 10px;
+    border: 1px solid #f8f8f8;
+    padding: 5px;
+}
+
+.comment_item .comment_item {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-left: 3px solid #f8f8f8;
+}
+
+#comment_message {
+    display: none;
+    font-weight: bold;
+}
+
+#comment_message.comment_success {
+    color: #0a0;
+}
+
+#comment_message.comment_invalid {
+    color: #a00;
+}
+
+.comment_info {
+    font-size: 85%;
+    margin-bottom: 10px;
+}
+
+.comment_info .author {
+    font-weight: bold;
+}
+.comment_info .timestamp {
+    color: #888;
+}
+
+.comment_body {
+    margin-bottom: 10px;
+}
+
+a.comment_reply {
+    font-size: 85%;
+    font-weight: bold;
+}
+
+#comment_new {
+    display: none;
+}
