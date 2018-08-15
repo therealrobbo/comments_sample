@@ -27,27 +27,25 @@ switch ( $gPZ['environment'] ) {
             "hostname"  => "127.0.0.1"
         );
         $gPZ['session_cookie']    = 'comment_9dk30fl032lflocal';
-        $gPZ['uploads_path']      = $gPZ['doc_root'] . "../comment-content/";
         error_reporting(E_ALL ^ E_DEPRECATED ^ E_NOTICE ^ E_STRICT );
         break;
 
     case ENV_PROD:
-        $gPZ['doc_root']          = '';     // TODO: Configure document root
+        $gPZ['doc_root']          = '/rmw.technology/html/tmbc';
 
-        $gPZ['base_url']          = '';     // TODO: Configure base URL
-        $gPZ['base_url_ssl']      = '';     // TODO: Configure base SSL
-        $gPZ['suppress_ads']      = false;
+        $gPZ['app_dir']           = 'tmbc';
+        $gPZ['base_url']          = 'http://rmw.technology/tmbc';
+        $gPZ['base_url_ssl']      = 'http://rmw.technology/tmbc';
         $gPZ['ssl_environment']   = false;
-        $gPZ['admin_email']       = '';     // TODO: Configure admin email
-        $gPZ['admin_cookie']      = '';     // TODO: Configure amin cookie name
+        $gPZ['admin_email']       = $gPZ['inquiries_email'];
+        $gPZ['admin_cookie']      = 'tmbc_comments';
         $gPZ['db_config']         = array(
-            "username"  => "",              // TODO: Configure database username
-            "password"  => "",              // TODO: Configure database password
-            "database"  => "",              // TODO: Configure database name
-            "hostname"  => ""               // TODO: Configure database host
+            "username"  => "rmwtechn_tmbc",
+            "password"  => "FoeBugledMetersLanded91",
+            "database"  => "rmwtechn_tmbc_comments",
+            "hostname"  => "localhost"
         );
-        $gPZ['uploads_path']        = "";   // TODO: Configure upload path
-        $gPZ['session_cookie']      = 'coffee_9dk30fl032lf531';
+        $gPZ['session_cookie']      = 'comments_9dk30fl032lf531';
 // TODO        error_reporting(E_ALL ^ E_DEPRECATED ^ E_NOTICE ^ E_STRICT );
 // TODO       ini_set( 'display_errors', 1 );
         error_reporting( 0 );

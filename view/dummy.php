@@ -7,6 +7,6 @@
     <p>Fusce velit felis, bibendum vel malesuada in, dignissim id nisl. Phasellus et magna et lectus venenatis ornare a eget augue. Praesent quis metus quis risus malesuada vestibulum. Curabitur dictum dapibus aliquet. Proin sed lobortis velit. Maecenas id rutrum neque. Aenean a nulla orci. Duis dui felis, bibendum sed blandit non, fringilla at felis. Integer tempus auctor enim, ac ultrices justo molestie ut. Vestibulum gravida leo eu porttitor placerat.</p>
 </div>
 
-<div id="comment_block" data-content-id="815">
+<div id="comment_block" data-helper="<?= $base_url ?>" data-content-id="815">
 
 </div>

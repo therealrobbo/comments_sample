@@ -95,7 +95,7 @@ $(document).ready(function() {
     function fetch_comments() {
         $.ajax({
             type: "GET",
-            url: '/api/get/' + content_id,
+            url: helper_url + '/api/get/' + content_id,
             success: function( data ) {
 
                 if ( data.result == 'comments' ) {
@@ -118,6 +118,11 @@ $(document).ready(function() {
 
     // Does the page have a comment container?
     if ( comment_container.length ) {
+
+        var helper_url = comment_container.attr( 'data-helper' );
+        if ( typeof helper_url === typeof undefined ) {
+            helper_url = '';
+        }
 
         // Does the comment container have a content ID?
         var content_id   = comment_container.attr( 'data-content-id' );
@@ -200,7 +205,7 @@ $(document).ready(function() {
 
                 $.ajax({
                     type: "POST",
-                    url: '/api/add/',
+                    url: helper_url + '/api/add/',
                     data: form_data,
                     success: function( data ) {
 
